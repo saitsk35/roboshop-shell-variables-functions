@@ -16,7 +16,7 @@ app_prereq() {
 
     echo -e ${color}Add roboshop user${no_color}
     id roboshop &>>/tmp/roboshop.log
-    if [ $? -eq 1 ]1 then
+    if [ $? -eq 1 ]; then
     useradd roboshop &>>/tmp/roboshop.log
     fi
     echo Status - $?
