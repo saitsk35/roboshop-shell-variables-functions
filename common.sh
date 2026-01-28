@@ -59,6 +59,7 @@ nodejs_setup() {
   systemd_setup
 }
 
+
 python_setu() {
   echo -e ${color}Instsll python${no_color}
   dnf install python3 gcc python3-devel -y &>>/tmp/roboshop.log
@@ -70,6 +71,7 @@ python_setu() {
 
   echo -e ${color}Instsll python dependencies${no_color}
   pip3 install -r requirements.txt
+  echo Status - $?
 
   systemd_setup
 }
