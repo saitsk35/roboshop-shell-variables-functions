@@ -60,7 +60,7 @@ nodejs_setup() {
 }
 
 
-python_setu() {
+python_setup() {
   echo -e ${color}Instsll python${no_color}
   dnf install python3 gcc python3-devel -y &>>/tmp/roboshop.log
   echo Status - $?
